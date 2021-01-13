@@ -4,9 +4,12 @@ Start:
 
 ```bash
 cd ~/catkin_ws
-catkin_create_pkg <folder> image_transport cv_bridge sensor_msgs rospy roscpp std_msgs
-mv <this_project> <folder>
+mkdir images_posting
+
+catkin_create_pkg images_posting image_transport cv_bridge sensor_msgs rospy roscpp std_msgs
+mv <this_project> images_posting
 catkin_make
-roscd <folder>
-roslaunch <folder> images_posting.launch
+
+roscd images_posting
+roslaunch images_posting images_posting.launch
 ```
