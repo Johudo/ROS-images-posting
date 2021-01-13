@@ -1,0 +1,14 @@
+<launch>
+    <node
+        pkg="images_posting"
+        type="publisher.py"
+        name="publisher"
+        output="screen"
+    />
+    <node
+        pkg="images_posting"
+        type="subscriber.py"
+        name="subscriber"
+        output="screen"
+    />
+</launch>
